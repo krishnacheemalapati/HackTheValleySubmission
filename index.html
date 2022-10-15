@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <script src="App.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    </link>
+    <title> Tetradoro Technique</title>
+</head>
 <html>
 <body>
 
@@ -6,19 +13,18 @@
 <div class = "kilometer container">
     <div>Kilometers driven: </div>
     <div id = "kilometers"></div>
-    <button id = "journey button">Start Journey</button>
+    <button id = "journeybtn">Start Journey</button>
 </div>
-<div class = "tree container">
-    <div class = "car"> </div>
-    <img src="./assets/car.png", width="150", height="100" />
-    <img src="./assets/live_tree.png", width="150", height="110" />
-    <img src="./assets/dead_tree.png", width="150", height="110" />
+<div class = "treecontainer">
+    <img src="./assets/live_tree.png", class = "live tree", width="150", height="110" />
+    <img src="./assets/dead_tree.png", class = "dead tree", width="150", height="110" />
+    <img src="./assets/car.png", id = "car", width="150", height="100" />
 </div>
 <div class = "path">
     <div class = "line"></div>
     <div class = "city container">
-        <div class = "City A"> </div>
-        <div class = "City B"></div>
+        <input type="text" id="cityA" name="input cityA" class="input cityA">
+        <input type="text" id="cityB" name="input cityB" class="input cityB">
     </div>
 </div>
 </body>

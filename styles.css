@@ -27,7 +27,19 @@ html {
     background: -o-linear-gradient( to top, rgb(146, 146, 230), rgb(7, 6, 53));
     background: linear-gradient( to top, rgb(146, 146, 230), rgb(7, 6, 53));
 }
-input{
+.input{
     font-family: 'Kollektif', 'Serif';
     padding-left: 2%;
+}
+
+#car{
+    position: absolute;
+}
+
+.treecontainer{
+    position: relative;
+}
+
+.tree{
+    position: absolute;
 }
