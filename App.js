@@ -2,12 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   var id = null;
   const car = document.getElementById("car");
   const btn = document.getElementById("journeybtn");
-  console.log("iwehofr");
-  alert("ioer");
   btn.onclick = moveCar();
   function moveCar() {
-    console.log("ayid");
-    alert("ioer");
     var pos = 0;
     clearInterval(id);
     id = setInterval(frame, 10);
