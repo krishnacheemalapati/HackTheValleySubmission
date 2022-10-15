@@ -29,11 +29,12 @@ html {
 }
 .input{
     font-family: 'Kollektif', 'Serif';
-    padding-left: 2%;
+    text-align: center;
 }
 
 #car{
     position: absolute;
+    left:2%;
 }
 
 .treecontainer{
@@ -42,4 +43,21 @@ html {
 
 .tree{
     position: relative;
+}
+
+.citycontainer{
+    width:80vw;
+    margin: 0;
+    margin-left: 10%;
+}
+
+.cityA, .cityB{
+    width: 10vw;
+}
+
+#cityB{
+    margin-left: 55vw;
+}
+#t1{
+    margin-left: 12vw;
 }

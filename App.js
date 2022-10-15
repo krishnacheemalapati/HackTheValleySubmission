@@ -10,7 +10,7 @@ function moveCar(id) {
     clearInterval(id);
     id = setInterval(frame, 10);
     function frame() {
-      if (pos == 1000) {
+      if (pos == 1300) {
         clearInterval(id);
       } else {
         pos++;
