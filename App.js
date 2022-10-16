@@ -28,7 +28,6 @@ function initMap(latA, lngA, latB, lngB) {
   var map;
   map = new google.maps.Map(
       document.getElementById('map'), options);
-  console.log("SO TUUUE")
   // Locations of landmarks
   const locationA = {lat: latA, lng: lngA};
   const locationB = {lat: latB, lng: lngB};
@@ -82,7 +81,6 @@ function geocode() {
   .then(function(response) {
     var latA = response.data.results[0].geometry.location.lat;
     var lngA = response.data.results[0].geometry.location.lng;
-    console.log(latA, lngA)
     axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
       params: {
         address: cityB,
