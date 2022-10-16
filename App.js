@@ -172,10 +172,20 @@ function initMap(latA, lngA, latB, lngB) {
           kilometers = directionsData.distance.text;
           if(kilometers.slice(kilometers.length - 3, kilometers.length) == " mi"){
             kilometers = kilometers.slice(0, kilometers.length - 3) * 1.609;
+            var death = kilometers * 1.77;   
             document.getElementById('kilometers').innerHTML = kilometers.toFixed(2) + " km";
+            document.getElementById('deadcount').innerHTML = death.toFixed(2) + " trees"
           } else {
+            var death = kilometers.slice(0, kilometers.length - 3) * 1.77;
             document.getElementById('kilometers').innerHTML = kilometers;
+            document.getElementById('deadcount').innerHTML = death + " trees"
           }    
+        //   if(kilometers.slice(kilometers.length - 3, kilometers.length) == " mi"){
+        //     kilometers = kilometers.slice(0, kilometers.length - 3) * 1.609;
+        //     document.getElementById('kilometers').innerHTML = kilometers.toFixed(2) + " km";
+        //   } else {
+        //     document.getElementById('kilometers').innerHTML = kilometers;
+        //   }
         }
       }
     });
