@@ -61,10 +61,7 @@ function initMap(latA, lngA, latB, lngB) {
             document.getElementById('kilometers').innerHTML = kilometers.toFixed(2) + " km";
           } else {
             document.getElementById('kilometers').innerHTML = kilometers;
-          }
-        
-          
-          
+          }    
         }
       }
     });
